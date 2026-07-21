@@ -63,6 +63,22 @@ h6 {
   color: var(--color-text-main);
 }
 
+.couple-section .section-title h2 {
+  color: #981818;
+}
+
+.couple-section .section-title p {
+  color: #666;
+}
+
+.events-section .section-title h2 {
+  color: #800000;
+}
+
+.event-card h3 {
+  color: #800000;
+}
+
 h1 {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   line-height: 1.2;
@@ -488,8 +504,8 @@ img {
 
 .quote-icon {
   font-size: 3rem;
-  color: var(--color-primary);
-  opacity: 0.2;
+  color: #ffff;
+  opacity: 1;
   margin-bottom: 1rem;
 }
 
@@ -572,6 +588,9 @@ blockquote {
   color: var(--color-primary);
   opacity: 0.5;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Story Timeline */
@@ -783,114 +802,18 @@ blockquote {
   color: var(--color-primary);
 }
 
-/* RSVP & Wishes */
-.rsvp-wishes-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: var(--radius-md);
-  font-family: var(--font-body);
-  font-size: 1rem;
-  transition: var(--transition-smooth);
-  background: rgba(255, 255, 255, 0.8);
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
-}
-
-.wishes-list {
-  margin-top: 2rem;
-  max-height: 400px;
-  overflow-y: auto;
-  padding-right: 1rem;
-}
-
-/* Scrollbar customization for wishes */
-.wishes-list::-webkit-scrollbar {
-  width: 6px;
-}
-.wishes-list::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-.wishes-list::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 10px;
-}
-
-.wish-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: var(--radius-md);
-  margin-bottom: 1rem;
-  border-left: 4px solid var(--color-primary);
-  box-shadow: var(--shadow-soft);
-}
-
-.wish-card h4 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  font-family: var(--font-body);
-  font-weight: 600;
-}
-
-.badge {
-  font-size: 0.75rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: var(--radius-full);
-}
-
-.badge.success {
-  background: #e6f4ea;
-  color: #1e8e3e;
-}
-
-.badge.danger {
-  background: #fce8e6;
-  color: #d93025;
-}
-
-.wish-card p {
-  font-size: 0.95rem;
-  color: var(--color-text-light);
-  margin-bottom: 0.5rem;
-}
-
-.wish-card .time {
-  font-size: 0.8rem;
-  color: #999;
-}
-
 /* Gifts */
 .gifts-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+}
+
+.gift-card h3,
+.bank-name,
+.account-number,
+.account-name {
+  color: var(--color-primary-dark);
 }
 
 .gift-card {
